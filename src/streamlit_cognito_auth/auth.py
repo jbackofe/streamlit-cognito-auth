@@ -502,7 +502,7 @@ class CognitoAuthenticator(CognitoAuthenticatorBase):
                 return False
 
             status_container.success("Logged in")
-            time.sleep(1.5)
+            time.sleep(0.5)
             st.rerun()
 
         logger.info("Trying to log in from saved credentials ...")
@@ -528,7 +528,7 @@ class CognitoAuthenticator(CognitoAuthenticatorBase):
 
         if self.session_manager.is_reset_password_session():
             status_container.info("Password reset is required")
-            time.sleep(1.5)
+            time.sleep(0.5)
             st.rerun()
 
         if not is_logged_in:
@@ -536,7 +536,7 @@ class CognitoAuthenticator(CognitoAuthenticatorBase):
             return False
 
         status_container.success("Logged in")
-        time.sleep(1.5)
+        time.sleep(0.5)
         st.rerun()
 
         # should not reach here
