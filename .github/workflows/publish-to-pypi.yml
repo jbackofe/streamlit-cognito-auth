@@ -3,11 +3,9 @@ name: Publish Python 🐍 distribution 📦 to PyPI
 on:
   push:
     branches:
-      - main  # Your default branch
-    tags-ignore:
-      - 'v*'  # Ignore tag pushes that follow semantic versioning
-  tags:
-    - 'v*'  # Trigger on version tags like v1.0.0
+      - main
+    tags:
+      - 'v*'
 
 jobs:
   build-and-publish:
