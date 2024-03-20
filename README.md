@@ -7,7 +7,7 @@ A Streamlit component for authenticating users with AWS Cognito
 To install the package, you can use pip:
 
 ```sh
-pip install streamlit-cognito-auth
+pip install streamlit-cognito-auth-v2
 ```
 
 ## Usage
